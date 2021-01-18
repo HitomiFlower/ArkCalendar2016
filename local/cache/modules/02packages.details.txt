@@ -4,8 +4,8 @@ Description:  Package names found in cpanfile.snapshot
 Columns:      package name, version, path
 Intended-For: Automated fetch routines, namespace documentation.
 Written-By:   Carton v1.0.34
-Line-Count:   1440
-Last-Updated: Thu Jan 14 18:36:15 2021
+Line-Count:   1475
+Last-Updated: Mon Jan 18 10:37:00 2021
 
 Algorithm::C3                      0.11  H/HA/HAARG/Algorithm-C3-0.11.tar.gz
 Apache::LogFormat::Compiler        0.36  K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz
@@ -730,6 +730,8 @@ Devel::PPPort                      3.62  A/AT/ATOOMIC/Devel-PPPort-3.62.tar.gz
 Devel::StackTrace                  2.04  D/DR/DROLSKY/Devel-StackTrace-2.04.tar.gz
 Devel::StackTrace::AsHTML          0.15  M/MI/MIYAGAWA/Devel-StackTrace-AsHTML-0.15.tar.gz
 Devel::StackTrace::Frame           2.04  D/DR/DROLSKY/Devel-StackTrace-2.04.tar.gz
+Devel::Symdump                     2.18  A/AN/ANDK/Devel-Symdump-2.18.tar.gz
+Devel::Symdump::Export            undef  A/AN/ANDK/Devel-Symdump-2.18.tar.gz
 Digest::SHA1                       2.13  G/GA/GAAS/Digest-SHA1-2.13.tar.gz
 Dist::CheckConflicts               0.11  D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
 Email::Valid                      1.202  R/RJ/RJBS/Email-Valid-1.202.tar.gz
@@ -843,6 +845,11 @@ FormValidator::Lite::Upload       undef  T/TO/TOKUHIROM/FormValidator-Lite-0.40.
 FormValidator::Lite::Upload::CGI  undef  T/TO/TOKUHIROM/FormValidator-Lite-0.40.tar.gz
 FormValidator::Lite::Upload::HTTPEngine undef  T/TO/TOKUHIROM/FormValidator-Lite-0.40.tar.gz
 FormValidator::Lite::Upload::PlackRequest undef  T/TO/TOKUHIROM/FormValidator-Lite-0.40.tar.gz
+Git::Repository                   1.324  B/BO/BOOK/Git-Repository-1.324.tar.gz
+Git::Repository::Command          1.324  B/BO/BOOK/Git-Repository-1.324.tar.gz
+Git::Repository::Plugin           1.324  B/BO/BOOK/Git-Repository-1.324.tar.gz
+Git::Version::Compare             1.004  B/BO/BOOK/Git-Version-Compare-1.004.tar.gz
+GitDDL                             0.03  T/TY/TYPESTER/GitDDL-0.03.tar.gz
 Harness::Hook                     undef  L/LE/LEONT/Test-Harness-3.42.tar.gz
 Hash::Merge                       0.302  H/HE/HERMES/Hash-Merge-0.302.tar.gz
 Hash::MultiValue                   0.16  A/AR/ARISTOTLE/Hash-MultiValue-0.16.tar.gz
@@ -901,6 +908,13 @@ Import::Into                   1.002005  H/HA/HAARG/Import-Into-1.002005.tar.gz
 indirect                           0.39  V/VP/VPIT/indirect-0.39.tar.gz
 IO::HTML                          1.004  C/CJ/CJM/IO-HTML-1.004.tar.gz
 IO::Socket::IP                     0.41  P/PE/PEVANS/IO-Socket-IP-0.41.tar.gz
+IPC::Run                       20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::Debug                20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::IO                   20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::Timer                20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::Win32Helper          20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::Win32IO              20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+IPC::Run::Win32Pump            20200505.0  T/TO/TODDR/IPC-Run-20200505.0.tar.gz
 JSON                               4.02  I/IS/ISHIGAKI/JSON-4.02.tar.gz
 JSON::Backend::PP                  4.02  I/IS/ISHIGAKI/JSON-4.02.tar.gz
 JSON::MaybeXS                  1.004003  E/ET/ETHER/JSON-MaybeXS-1.004003.tar.gz
@@ -939,6 +953,9 @@ Method::Generate::Accessor        undef  H/HA/HAARG/Moo-2.004004.tar.gz
 Method::Generate::BuildAll        undef  H/HA/HAARG/Moo-2.004004.tar.gz
 Method::Generate::Constructor     undef  H/HA/HAARG/Moo-2.004004.tar.gz
 Method::Generate::DemolishAll     undef  H/HA/HAARG/Moo-2.004004.tar.gz
+Mixin::Linewise                   0.108  R/RJ/RJBS/Mixin-Linewise-0.108.tar.gz
+Mixin::Linewise::Readers          0.108  R/RJ/RJBS/Mixin-Linewise-0.108.tar.gz
+Mixin::Linewise::Writers          0.108  R/RJ/RJBS/Mixin-Linewise-0.108.tar.gz
 MM                                 7.58  B/BI/BINGOS/ExtUtils-MakeMaker-7.58.tar.gz
 Module::Build                    0.4231  L/LE/LEONT/Module-Build-0.4231.tar.gz
 Module::Build::Base              0.4231  L/LE/LEONT/Module-Build-0.4231.tar.gz
@@ -1055,6 +1072,7 @@ Path::Class                        0.37  K/KW/KWILLIAMS/Path-Class-0.37.tar.gz
 Path::Class::Dir                   0.37  K/KW/KWILLIAMS/Path-Class-0.37.tar.gz
 Path::Class::Entity                0.37  K/KW/KWILLIAMS/Path-Class-0.37.tar.gz
 Path::Class::File                  0.37  K/KW/KWILLIAMS/Path-Class-0.37.tar.gz
+PerlIO::utf8_strict               0.008  L/LE/LEONT/PerlIO-utf8_strict-0.008.tar.gz
 Plack                            1.0048  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
 Plack::App::Cascade               undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
 Plack::App::CGIBin                undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
@@ -1128,6 +1146,14 @@ Plack::Util                       undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
 Plack::Util::Accessor             undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
 Plack::Util::IOWithPath           undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
 Plack::Util::Prototype            undef  M/MI/MIYAGAWA/Plack-1.0048.tar.gz
+Pod::Coverage                      0.23  R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+Pod::Coverage::CountParents       undef  R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+Pod::Coverage::ExportOnly         undef  R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+Pod::Coverage::Extractor           0.23  R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+Pod::Coverage::Overloader         undef  R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+Pod::Coverage::TrustPod        0.100005  R/RJ/RJBS/Pod-Coverage-TrustPod-0.100005.tar.gz
+Pod::Eventual                  0.094001  R/RJ/RJBS/Pod-Eventual-0.094001.tar.gz
+Pod::Eventual::Simple          0.094001  R/RJ/RJBS/Pod-Eventual-0.094001.tar.gz
 POSIX::strftime::Compiler          0.44  K/KA/KAZEBURO/POSIX-strftime-Compiler-0.44.tar.gz
 Role::Tiny                     2.002003  H/HA/HAARG/Role-Tiny-2.002003.tar.gz
 Role::Tiny::With               2.002003  H/HA/HAARG/Role-Tiny-2.002003.tar.gz
@@ -1268,13 +1294,17 @@ strictures                     2.000006  H/HA/HAARG/strictures-2.000006.tar.gz
 strictures::extra                 undef  H/HA/HAARG/strictures-2.000006.tar.gz
 String::CamelCase                  0.04  H/HI/HIO/String-CamelCase-0.04.tar.gz
 Sub::Defer                     2.006006  H/HA/HAARG/Sub-Quote-2.006006.tar.gz
+Sub::Exporter                     0.987  R/RJ/RJBS/Sub-Exporter-0.987.tar.gz
 Sub::Exporter::Progressive     0.001013  F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
+Sub::Exporter::Util               0.987  R/RJ/RJBS/Sub-Exporter-0.987.tar.gz
 Sub::Identify                      0.14  R/RG/RGARCIA/Sub-Identify-0.14.tar.gz
 Sub::Install                      0.928  R/RJ/RJBS/Sub-Install-0.928.tar.gz
 Sub::Name                          0.26  E/ET/ETHER/Sub-Name-0.26.tar.gz
 Sub::Quote                     2.006006  H/HA/HAARG/Sub-Quote-2.006006.tar.gz
 Sub::Uplevel                     0.2800  D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
 Sub::Util                          1.55  P/PE/PEVANS/Scalar-List-Utils-1.55.tar.gz
+System::Command                   1.121  B/BO/BOOK/System-Command-1.121.tar.gz
+System::Command::Reaper           1.121  B/BO/BOOK/System-Command-1.121.tar.gz
 TAP::Base                          3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 TAP::Formatter::Base               3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 TAP::Formatter::Color              3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
@@ -1318,6 +1348,8 @@ TAP::Parser::SourceHandler::Perl   3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 TAP::Parser::SourceHandler::RawTAP 3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 TAP::Parser::YAMLish::Reader       3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 TAP::Parser::YAMLish::Writer       3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
+Test::CPAN::Meta                   0.25  B/BA/BARBIE/Test-CPAN-Meta-0.25.tar.gz
+Test::CPAN::Meta::Version          0.25  B/BA/BARBIE/Test-CPAN-Meta-0.25.tar.gz
 Test::Deep                        1.130  R/RJ/RJBS/Test-Deep-1.130.tar.gz
 Test::Deep::All                   undef  R/RJ/RJBS/Test-Deep-1.130.tar.gz
 Test::Deep::Any                   undef  R/RJ/RJBS/Test-Deep-1.130.tar.gz
@@ -1371,9 +1403,12 @@ Test::Deep::SuperHashKeys         undef  R/RJ/RJBS/Test-Deep-1.130.tar.gz
 Test::Deep::SuperHashKeysOnly     undef  R/RJ/RJBS/Test-Deep-1.130.tar.gz
 Test::Exception                    0.43  E/EX/EXODIST/Test-Exception-0.43.tar.gz
 Test::Fatal                       0.016  R/RJ/RJBS/Test-Fatal-0.016.tar.gz
+Test::Git                         1.324  B/BO/BOOK/Git-Repository-1.324.tar.gz
 Test::Harness                      3.42  L/LE/LEONT/Test-Harness-3.42.tar.gz
 Test::Module::Build::Pluggable    undef  T/TO/TOKUHIROM/Module-Build-Pluggable-0.10.tar.gz
 Test::Mouse                       undef  S/SK/SKAJI/Mouse-v2.5.10.tar.gz
+Test::Pod                          1.52  E/ET/ETHER/Test-Pod-1.52.tar.gz
+Test::Pod::Coverage                1.10  N/NE/NEILB/Test-Pod-Coverage-1.10.tar.gz
 Test::Requires                     0.11  T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
 Test::SharedFork                   0.35  E/EX/EXODIST/Test-SharedFork-0.35.tar.gz
 Test::SharedFork::Array           undef  E/EX/EXODIST/Test-SharedFork-0.35.tar.gz

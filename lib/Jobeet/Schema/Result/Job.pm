@@ -24,18 +24,26 @@ __PACKAGE__->add_columns(
     is_public    => TINYINT,
     is_activated => TINYINT,
     email        => VARCHAR,
+    company      => VARCHAR(
+        is_nullable => 1,
+    ),
+    logo         => VARCHAR(
+        is_nullable => 1,
+    ),
+    url          => VARCHAR(
+        is_nullable => 1,
+    ),
     expires_at   => DATETIME,
     created_at   => DATETIME,
-    updated_at   => DATETIME
+    updated_at   => DATETIME,
 );
 
 # Primary key
 __PACKAGE__->set_primary_key('id');
 # INDEX
-__PACKAGE__->add_unique_constraint(['token']);
+__PACKAGE__->add_unique_constraint([ 'token' ]);
 # リレーション関係指定
 # JobとCategoryは1対多関係
-__PACKAGE__->belongs_to( category => 'Jobeet::Schema::Result::Category', 'category_id' );
-
+__PACKAGE__->belongs_to(category => 'Jobeet::Schema::Result::Category', 'category_id');
 
 1;
