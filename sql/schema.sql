@@ -31,7 +31,7 @@ CREATE TABLE jobeet_job (
   is_activated TINYINT NOT NULL DEFAULT 0,
   email VARCHAR(255) NOT NULL,
   company VARCHAR(255),
-  log VARCHAR(255),
+  logo VARCHAR(255),
   url VARCHAR(255),
   expires_at DATETIME NOT NULL,
   created_at DATETIME NOT NULL,
