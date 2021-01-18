@@ -2,12 +2,14 @@ package Jobeet::Models;
 use strict;
 use v5.16.3;
 use warnings;
-use Ark::Models '-base';
+use Ark::Models '-base'; # アプリケーションのモデルクラスという設定
 
 # モデルを登録する
 register Schema => sub {
+    # 初期化処理、最後にこのモデルのオブジェクトを返す
     my $self = shift;
 
+    # $self->get('conf')はconfig.plを読み取る設定
     my $conf = $self->get('conf')->{database}
         or die 'require database config';
 
