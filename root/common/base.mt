@@ -39,7 +39,7 @@
 
     <div id="content">
         <div class="content">
-            ? block content => '';
+? block content => '';
         </div>
     </div>
 
