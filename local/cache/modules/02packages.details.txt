@@ -4,8 +4,8 @@ Description:  Package names found in cpanfile.snapshot
 Columns:      package name, version, path
 Intended-For: Automated fetch routines, namespace documentation.
 Written-By:   Carton v1.0.34
-Line-Count:   1475
-Last-Updated: Mon Jan 18 10:37:00 2021
+Line-Count:   1493
+Last-Updated: Tue Jan 19 22:26:35 2021
 
 Algorithm::C3                      0.11  H/HA/HAARG/Algorithm-C3-0.11.tar.gz
 Apache::LogFormat::Compiler        0.36  K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.36.tar.gz
@@ -57,6 +57,8 @@ bareword::filehandles             0.007  I/IL/ILMARI/bareword-filehandles-0.007.
 Bundle::DBI                    12.008696  T/TI/TIMB/DBI-1.643.tar.gz
 Carp::Clan                         6.08  E/ET/ETHER/Carp-Clan-6.08.tar.gz
 Class::Accessor                    0.51  K/KA/KASEI/Class-Accessor-0.51.tar.gz
+Class::Accessor::Chained           0.01  R/RC/RCLAMP/Class-Accessor-Chained-0.01.tar.gz
+Class::Accessor::Chained::Fast    undef  R/RC/RCLAMP/Class-Accessor-Chained-0.01.tar.gz
 Class::Accessor::Fast              0.51  K/KA/KASEI/Class-Accessor-0.51.tar.gz
 Class::Accessor::Faster            0.51  K/KA/KASEI/Class-Accessor-0.51.tar.gz
 Class::Accessor::Grouped        0.10014  H/HA/HAARG/Class-Accessor-Grouped-0.10014.tar.gz
@@ -100,6 +102,8 @@ Cpanel::JSON::XS::Type            undef  R/RU/RURBAN/Cpanel-JSON-XS-4.25.tar.gz
 Data::Dumper::Concise             2.023  E/ET/ETHER/Data-Dumper-Concise-2.023.tar.gz
 Data::Dumper::Concise::Sugar      2.023  E/ET/ETHER/Data-Dumper-Concise-2.023.tar.gz
 Data::OptList                     0.110  R/RJ/RJBS/Data-OptList-0.110.tar.gz
+Data::Page                         2.03  E/ET/ETHER/Data-Page-2.03.tar.gz
+Data::Page::Navigation             0.07  K/KA/KAZEBURO/Data-Page-Navigation-0.07.tar.gz
 Data::Section::Simple              0.07  M/MI/MIYAGAWA/Data-Section-Simple-0.07.tar.gz
 Data::Util                         0.66  S/SY/SYOHEX/Data-Util-0.66.tar.gz
 Data::Util::Error                 undef  S/SY/SYOHEX/Data-Util-0.66.tar.gz
@@ -145,6 +149,16 @@ Date::Language::Turkish             1.0  A/AT/ATOOMIC/TimeDate-2.33.tar.gz
 Date::Parse                        2.33  A/AT/ATOOMIC/TimeDate-2.33.tar.gz
 DateTime                           1.54  D/DR/DROLSKY/DateTime-1.54.tar.gz
 DateTime::Duration                 1.54  D/DR/DROLSKY/DateTime-1.54.tar.gz
+DateTime::Format::Builder          0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser  0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser::Dispatch 0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser::generic 0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser::Quick 0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser::Regex 0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::Builder::Parser::Strptime 0.83  D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+DateTime::Format::SQLite           0.11  C/CF/CFAERBER/DateTime-Format-SQLite-0.11.tar.gz
+DateTime::Format::Strptime         1.78  D/DR/DROLSKY/DateTime-Format-Strptime-1.78.tar.gz
+DateTime::Format::Strptime::Types  1.78  D/DR/DROLSKY/DateTime-Format-Strptime-1.78.tar.gz
 DateTime::Helpers                  1.54  D/DR/DROLSKY/DateTime-1.54.tar.gz
 DateTime::Infinite                 1.54  D/DR/DROLSKY/DateTime-1.54.tar.gz
 DateTime::Infinite::Future         1.54  D/DR/DROLSKY/DateTime-1.54.tar.gz
@@ -1037,6 +1051,10 @@ Package::Stash::XS                 0.29  E/ET/ETHER/Package-Stash-XS-0.29.tar.gz
 Package::Variant               1.003002  M/MS/MSTROUT/Package-Variant-1.003002.tar.gz
 Params::Util                      1.102  R/RE/REHSACK/Params-Util-1.102.tar.gz
 Params::Util::PP                  1.102  R/RE/REHSACK/Params-Util-1.102.tar.gz
+Params::Validate                   1.30  D/DR/DROLSKY/Params-Validate-1.30.tar.gz
+Params::Validate::Constants        1.30  D/DR/DROLSKY/Params-Validate-1.30.tar.gz
+Params::Validate::PP               1.30  D/DR/DROLSKY/Params-Validate-1.30.tar.gz
+Params::Validate::XS               1.30  D/DR/DROLSKY/Params-Validate-1.30.tar.gz
 Params::ValidationCompiler         0.30  D/DR/DROLSKY/Params-ValidationCompiler-0.30.tar.gz
 Params::ValidationCompiler::Compiler 0.30  D/DR/DROLSKY/Params-ValidationCompiler-0.30.tar.gz
 Params::ValidationCompiler::Exceptions 0.30  D/DR/DROLSKY/Params-ValidationCompiler-0.30.tar.gz
