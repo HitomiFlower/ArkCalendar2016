@@ -10,7 +10,8 @@ has '+namespace' => default => 'job'; # URL対応
 # Argsにパラメータ受け取る数を指定. 0の場合が省略できる
 sub index :Path {
     my ($self, $c) = @_;
-    $c->stash->{jobs} = models('Schema::Job');
+
+    $c->stash->{categories} = models('Schema::Category')->get_with_jobs;
 }
 
 # job/{job_token}(detail)

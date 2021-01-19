@@ -4,6 +4,7 @@ use strict;
 use warnings FATAL => 'all';
 use parent 'Jobeet::Schema::ResultBase';
 use Jobeet::Schema::Types;
+use Jobeet::Models;
 use utf8;
 
 # ここにテーブル定義
@@ -45,5 +46,14 @@ __PACKAGE__->add_unique_constraint([ 'token' ]);
 # リレーション関係指定
 # JobとCategoryは1対多関係
 __PACKAGE__->belongs_to(category => 'Jobeet::Schema::Result::Category', 'category_id');
+
+# insertの場合処理
+sub insert {
+    my $self = shift;
+
+    # 新規登録時にexpires_atが30日後に自動的にセットされる
+    $self->expires_at(models('Schema')->now->add(days => models('conf')->{active_days}));
+    $self->next::method(@_); # 他の場所でinsertをフックしている場合にそちらのメソッドにも処理を投げる
+}
 
 1;
