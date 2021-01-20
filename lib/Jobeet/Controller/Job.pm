@@ -1,5 +1,6 @@
 package Jobeet::Controller::Job;
 use Ark 'Controller';
+with 'Ark::ActionClass::Form';
 
 use Jobeet::Models;
 has '+namespace' => default => 'job'; # URL対応
@@ -20,8 +21,10 @@ sub show :Path :Args(1) {
 }
 
 # /job/create (new)
-sub create :Local {
+sub create :Local :Form('Jobeet::Form::Job') {
     my ($self, $c) = @_;
+
+    $c->stash->{form} = $self->form;
 }
 
 
