@@ -5,6 +5,8 @@ use warnings FATAL => 'all';
 use parent 'Jobeet::Schema::ResultBase';
 use Jobeet::Schema::Types;
 use Jobeet::Models;
+use Digest::SHA1 qw/sha1_hex/;
+use Data::UUID;
 use utf8;
 
 # ここにテーブル定義
@@ -53,7 +55,32 @@ sub insert {
 
     # 新規登録時にexpires_atが30日後に自動的にセットされる
     $self->expires_at(models('Schema')->now->add(days => models('conf')->{active_days}));
-    $self->next::method(@_); # 他の場所でinsertをフックしている場合にそちらのメソッドにも処理を投げる
+    $self->token(sha1_hex(Data::UUID->new->create));
+
+    # 他の場所でinsertをフックしている場合にそちらのメソッドにも処理を投げる
+    # 処理はこのメソッドの前に片付けよう
+    $self->next::method(@_);
+}
+
+sub is_expired {
+    my ($self) = @_;
+    $self->days_before_expired < 0;
+}
+
+sub days_before_expired {
+    my ($self) = @_;
+    my $now = models('Schema')->now;
+    $self->expires_at->delta_days($now)->in_units('days');
+}
+
+sub expires_soon {
+    my ($self) = @_;
+    $self->days_before_expired < 5;
+}
+
+sub publish {
+    my ($self) = @_;
+    $self->update({ is_activated => 1 });
 }
 
 1;
