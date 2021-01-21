@@ -34,4 +34,22 @@ sub latest_post {
     $r->first;
 }
 
+sub search_fulltest {
+    my ($self, $word) = @_;
+
+    my $r = $self->search(
+        {
+            is_activated => 1,
+            -or          => [
+                { description => { -like => "%${word}%", } },
+                { how_to_apply => { -like => "%${word}", } },
+            ],
+        },
+        {
+            order_by => { -desc => 'created_at' },
+            row      => 20,
+        }
+    );
+}
+
 1;
