@@ -1,7 +1,7 @@
 package Page::Navigation;
 use strict;
 use warnings;
-use Data::Page;
+use DBIx::Class::ResultSet::Pager;
 
 our $VERSION = '0.07';
 
