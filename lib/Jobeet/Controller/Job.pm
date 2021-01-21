@@ -21,6 +21,13 @@ sub show :Path :Args(1) {
 
     $c->stash->{job} = models('Schema::Job')->find({ token => $job_token })
         or $c->detach('/default');
+
+    # $key名で保存されたデータを取得
+    my $history = $c->session->get('job_history') || [];
+
+    unshift @$history, { $c->stash->{job}->get_columns };
+    # $key名で$valueというデータを保存
+    $c->session->set(job_history => $history);
 }
 
 # /job/create (new)

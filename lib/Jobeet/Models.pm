@@ -17,6 +17,16 @@ register Schema => sub {
     Jobeet::Schema->connect(@$conf);
 };
 
+register cache => sub {
+    my $self = shift;
+
+    my $conf = $self->get('conf')->{cache}
+        or die 'require cache config';
+
+    $self->ensure_class_loaded('Cache::FastMmap');
+    Cache::FastMmap->new(%$conf);
+};
+
 autoloader qr/^Schema::/ => sub {
     my ($self, $name) = @_;
 

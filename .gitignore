@@ -8,6 +8,7 @@
 *.bs
 local/
 .idea/
+tmp/
 .DS_Store
 
 # Devel::Cover
