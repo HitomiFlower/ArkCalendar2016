@@ -10,3 +10,5 @@ requires 'GitDDL';
 requires 'Path::Class';
 requires 'DateTime::Format::SQLite';
 requires 'Cache::FastMmap';
+requires 'Ark::Plugin::I18N';
+requires 'Locale::Maketext::Lexicon';

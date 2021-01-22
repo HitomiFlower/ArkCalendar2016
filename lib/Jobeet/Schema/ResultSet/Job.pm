@@ -34,7 +34,7 @@ sub latest_post {
     $r->first;
 }
 
-sub search_fulltest {
+sub search_fulltext {
     my ($self, $word) = @_;
 
     my $r = $self->search(
@@ -42,13 +42,10 @@ sub search_fulltest {
             is_activated => 1,
             -or          => [
                 { description => { -like => "%${word}%", } },
-                { how_to_apply => { -like => "%${word}", } },
-            ],
+                { how_to_apply => { -like => "%${word}%", } },
+            ]
         },
-        {
-            order_by => { -desc => 'created_at' },
-            row      => 20,
-        }
+        { order_by => { -desc => 'created_at' }, rows => 20 }
     );
 }
 
